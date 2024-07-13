@@ -3,7 +3,7 @@ import sys
 
 def api(ip):
     try:
-        url = f"http://ip-api.com/json/{ip}"
+        url = f"http://ip-api.com/json/{ip}" #url to get details of an ip address
         response = requests.get(url)
         response.raise_for_status()
         fetch_data = response.json()
